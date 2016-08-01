@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('new');
     this.route('post', {path: ':id'});
   })
+  this.route('events');
 });
 
 export default Router;
