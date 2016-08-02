@@ -1,5 +1,8 @@
 <h2 {{action 'toggleBody'}} >{{title}}</h2>
-<button {{action 'sayHello'}}>Say Hello</button>
+
+<p>
+  Created {{format-date created}}
+</p>
 {{#if isShowingBody}}
   <p>{{body}}</p>
 {{/if}}
