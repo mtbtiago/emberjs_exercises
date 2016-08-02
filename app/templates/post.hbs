@@ -1,0 +1,19 @@
+<h2>{{title}}</h2>
+<p>{{body}}</p>
+<p>
+  <strong>authors: </strong>
+  {{#each authors as |author|}}
+    {{author}}
+    {{!-- {{#unless (@index === authors.length)}} --}}
+    ,
+    {{!-- {{/unless}} --}}
+  {{/each}}
+</p>
+<h4>Comments</h4>
+<ul>
+  {{#each comments as |comment|}}
+    <li>
+      <strong>{{comment.name}}</strong> - {{comment.comment}}
+    </li>
+  {{/each}}
+</ul>
