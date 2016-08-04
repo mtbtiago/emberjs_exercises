@@ -1,0 +1,8 @@
+<h2>Github Users</h2>
+
+<ul>
+  {{#each model as |user|}}
+    <li>{{user.login}}</li>
+  {{/each}}
+</ul>
+{{outlet}}

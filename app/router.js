@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('events');
   this.route('post');
   this.route('cars');
+  this.route('users');
 });
 
 export default Router;
