@@ -1,8 +1,8 @@
-[
-  {
+{
+  "cars": [{
     "id": 1,
     "make": "Honda",
-    "model": "Civic",
+    "model": "Accord",
     "year": "2007"
   }, {
     "id": 2,
@@ -14,5 +14,5 @@
     "make": "Ford",
     "model": "Explorer",
     "year": "2002"
-  }
-]
+  }]
+}
