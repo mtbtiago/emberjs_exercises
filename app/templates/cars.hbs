@@ -6,7 +6,9 @@
 <ul>
   {{#each model as |car|}}
     <li>
-      {{car.year}} {{car.make}} {{car.model}} - {{#link-to 'cars.edit' car.id}}Edit{{/link-to}}
+      {{car.year}} {{car.make}} {{car.model}} -
+      {{#link-to 'cars.edit' car.id}}Edit{{/link-to}}
+      <button {{action 'deleteCar' car.id}}>Delete</button>
     </li>
   {{/each}}
 </ul>
