@@ -11,7 +11,9 @@ Router.map(function() {
   this.route('contact');
   this.route('events');
   this.route('post');
-  this.route('cars');
+  this.route('cars', function() {
+    this.route('new');
+  });
   this.route('users');
 });
 
