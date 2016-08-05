@@ -4,6 +4,27 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'myapp',
     environment: environment,
+    // firebase config BEGIN
+    firebase: {
+      apiKey: "-- was removed from here --",
+      authDomain: "mycars-e9580.firebaseapp.com",
+      databaseURL: "https://mycars-e9580.firebaseio.com",
+      storageBucket: "mycars-e9580.appspot.com",
+    },
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+    // you also need to relax access to database, creating a rule in https://console.firebase.google.com/project/mycars-e9580/database/rules
+    // {
+    //   "rules": {
+    //     ".read": true,
+    //     ".write": true
+    //   }
+    // }
+
+    // firebase config END
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
