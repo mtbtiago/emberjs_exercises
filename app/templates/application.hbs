@@ -22,5 +22,14 @@
 </nav>
 
 <div class="container">
-  {{outlet}}
+  <div class="row">
+    <div class="col-md-4">
+      {{my-github-repos model=model}}
+    </div>
+    <div class="col-md-8">
+      index
+    </div>
+  </div>
 </div><!-- /.container -->
+
+{{outlet}}

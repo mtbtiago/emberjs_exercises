@@ -14,7 +14,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'script-src': "'self' 'unsafe-eval' apis.google.com",
       'frame-src': "'self' https://*.firebaseapp.com",
-      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com http://api.github.com"
     },
     // you also need to relax access to database, creating a rule in https://console.firebase.google.com/project/mycars-e9580/database/rules
     // {
