@@ -1,0 +1,11 @@
+<h1>{{title}} {{name}}</h1>
+{{yield}}
+<button {{action 'greedUser' name}}>Greed user</button>
+{{#if (eq greetingCount 0)}}
+  <h4>Not greeted yet</h4>
+{{else if (lt greetingCount 3)}}
+  <h4>You have been greeted</h4>
+  <h5>{{greetingMsg}}</h5>
+{{else}}
+  <h4>Stop! You have been greeted {{greetingCount}} times!</h4>
+{{/if}}
